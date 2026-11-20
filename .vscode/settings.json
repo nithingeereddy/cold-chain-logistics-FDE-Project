@@ -1,3 +1,37 @@
 {
-    "python.terminal.useEnvFile": true
+    "python.terminal.useEnvFile": true,
+    "mssql.connections": [
+        {
+            "profileName": "EC2 Docker SQL (tunnel 127.0.0.1:1434)",
+            "server": "127.0.0.1,1434",
+            "database": "master",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "savePassword": true,
+            "encrypt": "Optional",
+            "trustServerCertificate": true,
+            "groupId": "ROOT",
+            "id": "82ed5bf0-8636-4ea5-866e-80fd89578494",
+            "profileSource": 0
+        },
+        {
+            "profileName": "Local Docker SQL (127.0.0.1:1433)",
+            "server": "127.0.0.1,1433",
+            "database": "master",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "savePassword": true,
+            "encrypt": "Optional",
+            "trustServerCertificate": true,
+            "groupId": "ROOT",
+            "id": "aa523e1e-c37d-43ec-bfcc-e1f2ec679c70",
+            "profileSource": 0,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql",
+            "containerName": "legacy-mssql"
+        }
+    ]
 }
